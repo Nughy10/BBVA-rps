@@ -1,35 +1,46 @@
-## Rock, Paper, Scissors!
+BBVA JavaScript Challenge (Rock, Paper, Scissors, Lizard, Spock)
+  
+  
 
-[![Built with open-wc recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://github.com/open-wc)
+- Description: 
+  
+  JavaScript application using LitElement framework. 
 
-#### Rock, Paper, Scissors! is a progressive mobile web app about the world-known "rock, paper, scissors", expanded with the lizard and Spock. The app doesn't require a server to work, nor it requires an internet conexion to work once it has started.
+  Rock - Paper -Scissors - Lizard - Spock is a five gesture expansion of the classic selection method game Rock - Paper - Scissors.
+  
+  It operates on the same basic principle, but includes two additonal weapons: the Lizard and Spock. This reduces the chances of a round endig in a tie.
+  
+  
+  
+- Rules: 
+  
+  The player chooses a move and a short time later the choice of bot is revealed. The winner is the one who beats the other.
+  
+  The purpose of the game is explained with the famous phrase of Sheldon Cooper (Big Bang Theory).
+  
+  Scissors cuts Paper, Paper covers Rock, Rock crushes Lizard, Lizard poisons Spock, Spock smashes Scissors, Scissors decapitates Lizard, Lizard eats Paper, Paer diaproves Spock, Spock vaporizes Rock, (and as it always has) Rock crushes Scissors. 
 
-## Tech Stack
+  
+- Start:
 
-It's made entirely with Lit and deployed using Netlify. You can open the app clicking [here](https://rock-paper-scissors-lit.netlify.app/).
+  npm install 
+  
+  npm start
+  
+  
+  
+- Test: 
+    
+  npm test 
+    
+    
+    
+- Operation: 
 
-## Quickstart
-
-To get started:
-
-```bash
-npm install
-npm run start
-# requires node 10 & npm 6 or higher
-```
-
-## Scripts
-
-- `start` runs your app for development, reloading on file changes
-- `start:build` runs your app after it has been built using the build command
-- `build` builds your app and outputs it in your `dist` directory
-- `test` runs your test suite with Web Test Runner
-
-## Details
-
-The game has 3 different views: `home`, `game` & `ranking`.
-- `home`: It contains the register and the login form.
-- `game`: The game itself, it also contains information about the profile.
-- `ranking`: It shows a table with the existing players along with their scores.
-
-All the information is stored in the `localStorage` of the browser.
+  1) register: Register user form (setting localStorage).
+  
+  2) login: Login user form (getting localStorage).
+   
+  3) game: Game, Rock - Paper - Scissors - Lizard - Spock.
+   
+  4) ranking: Ranking of users (score and attemps).
