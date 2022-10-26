@@ -36,11 +36,11 @@ describe('GameComponent', () => {
           expect(game.result).to.exist; 
     });
     it('check result obtained by the player and robot (tie case) ', async () => {
-        const result = game.shadowRoot.querySelector('#result')
-        expect(result).not.to.exist;
-        await game.shadowRoot.querySelector('#rockBtn').click();
-        await aTimeout(1500);
-        expect(game.result).to.exist; 
+      const result = game.shadowRoot.querySelector('#result')
+      expect(result).not.to.exist;
+      await game.shadowRoot.querySelector('#rockBtn').click();
+      await aTimeout(1500);
+      expect(game.result).to.exist; 
     });
     it('check result obtained by the player and robot (tie case) ', async () => {
       const result = game.shadowRoot.querySelector('#result')
